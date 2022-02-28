@@ -1,1 +1,42 @@
+<html lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <title>To-do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="todoapp">
+    <header class="header">
+      <h1>To-do list</h1>
+      <input id="newTodo" class="new-todo" placeholder="Add an activity from here...">
+    </header>
+    <section id="main">
+      <input id="toggleInputAll" class="toggle-all" type="checkbox">
+      <label for="toggle-all">Mark Done</label>
+      <ul id="todoListView" class="todo-list"></ul>
+    </section>
+
+    <footer class="footer">
+      <span class="todo-count"><strong id="todoCount">0</strong> Undone activities</span>
+      <ul class="filters">
+        <li>
+          <a class="selected" id="allWorks" onclick="changeClass(this)" href="#/">All</a>
+        </li>
+        <li>
+          <a href="#active" id="activedItems" onclick="changeClass(this)">Active</a>
+        </li>
+        <li>
+          <a href="#completed" id="completedTodos" onclick="changeClass(this)">Completed</a>
+        </li>
+      </ul>
+      <button class="clear-completed" id="btnClear">Clear completed</button>
+    </footer>
+    
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
