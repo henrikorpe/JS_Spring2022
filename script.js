@@ -43,7 +43,9 @@ TodoController.prototype = {
   },
 
   addNewTodo: function (todo, list) {
-      if (todo.length > 0) {
+    var lengthTodo = todo.length;
+    
+      if (lengthTodo !== 0) {
     list.push(todo);
     todoController.setTodoLocalstorage(list);
     return todo;
