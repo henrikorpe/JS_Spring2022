@@ -43,7 +43,7 @@ TodoController.prototype = {
   },
 
   addNewTodo: function (todo, list) {
-    var lengthTodo = todo.length;
+    var lengthTodo = list.length;
     
       if (lengthTodo > 0) {
     list.push(todo);
