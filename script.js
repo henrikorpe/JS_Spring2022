@@ -297,4 +297,4 @@ var todoController = new TodoController();
 var todo = new Todo();
 todoController.events();
 todoController.renderTodo();
-todoController.countItem();
+todoController.countItem()
