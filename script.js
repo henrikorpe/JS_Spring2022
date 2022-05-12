@@ -52,13 +52,6 @@ TodoController.prototype = {
 }
 }
     
-    .length > 0) {
-    list.push(todo);
-    todoController.setTodoLocalstorage(list);
-    return todo;
-} else {
-    alert("You must write something!");
-}
   },
 
   setAttributes: function (element, attrs) {
