@@ -51,7 +51,6 @@ TodoController.prototype = {
     return todo;
     }  
   }
-}
     
   },
 
