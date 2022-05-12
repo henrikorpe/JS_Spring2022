@@ -42,16 +42,15 @@ TodoController.prototype = {
     return lastId;
   },
 
-  addNewTodo: function (todo, list) {
-    var lengthTodo = list.length;
-    
-      if (lengthTodo > 0) {
+  addNewTodo: function (todo, list) {  
+    if (todo == '') {
+      alert("You must write something!");
+    } else {
     list.push(todo);
     todoController.setTodoLocalstorage(list);
     return todo;
-} else {
-    alert("You must write something!");
-}
+    }  
+  }
 }
     
   },
