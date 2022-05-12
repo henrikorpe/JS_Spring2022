@@ -43,7 +43,7 @@ TodoController.prototype = {
   },
 
   addNewTodo: function (todo, list) {
-      if (todo.length === 0) {
+      if (todo == "") {
           alert("You must write something!");
         } else {
      list.push(todo);
