@@ -43,13 +43,22 @@ TodoController.prototype = {
   },
 
   addNewTodo: function (todo, list) {
-      if (todo == "") {
-          alert("You must write something!");
-        } else {
-     list.push(todo);
+      if (todo.length > 0) {
+    list.push(todo);
     todoController.setTodoLocalstorage(list);
     return todo;
-        }
+} else {
+    alert("You must write something!");
+}
+}
+    
+    .length > 0) {
+    list.push(todo);
+    todoController.setTodoLocalstorage(list);
+    return todo;
+} else {
+    alert("You must write something!");
+}
   },
 
   setAttributes: function (element, attrs) {
